@@ -1,0 +1,38 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+header {
+    background-color: lightblue;
+    text-align: center;
+}
+
+
+nav a {
+    margin: 5px;
+    text-decoration: none;
+}
+
+
+main div {
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.datos {
+    text-align: left;
+    background-color: aqua;
+}
+
+.carlos {
+    background-color: black;
+    color: aqua;
+    text-align: left;
+}
