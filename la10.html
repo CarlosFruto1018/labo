@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pagina</title>
+</head>
+<body>
+    <h2>Operaciones Básicas</h2>
+    <input type="number" id="num1" placeholder="cual es el primero numero" oninput="updateResult()">
+    <input type="number" id="num2" placeholder="cual es el segundo numero" oninput="updateResult()">
+    <button id="calcular" onclick="calcular()">Calcular</button>
+    <h3 id="resultado">El resultado es:</h3>
+    <script>
+        function calcular() {
+            const num1 = parseFloat(document.getElementById('num1').value) || 0;
+            const num2 = parseFloat(document.getElementById('num2').value) || 0;
+            let resultado = `Suma: ${num1 + num2}, `;
+            resultado += `Resta: ${num1 - num2}, `;
+            resultado += `Multiplicación: ${num1 * num2}, `;
+            resultado += `División: ${num2 !== 0 ? (num1 / num2) : 'no se puede dividir entre 0'}`;
+            
+            
+            document.getElementById('resultado').innerText = `el resultado es: ${resultado}`;
+        }
+    </script>
+</body>
+</html>
